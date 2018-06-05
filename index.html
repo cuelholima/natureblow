@@ -20,6 +20,10 @@
     <link rel="stylesheet" href="assets/socicon/css/styles.css">
     <link rel="stylesheet" href="assets/theme/css/style.css">
     <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+
+    <!-- LINK FORMULARIO + STYLE -->
+
+
 </head>
 
 <body>
@@ -291,46 +295,75 @@
                 </div>
             </div>
         </div>
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="media-container-column col-lg-8" data-form-type="formoid">
-                    <div data-form-alert="" hidden="">Obrigado pelo contato!</div>
-
-                    <form class="mbr-form" method="POST" action="processa.php">
-                        <input type="hidden" name="email" data-form-email="true" value="v2c8xKMWT+tbae+RldZNKid7F3+04hhuDVEH3SsEjnQIT/eq612VKmyFhfZK3pndaFNJyRWAdJSiA1cmRWkij57kHdmzPlMsuTr/e07OQLd6xNOYFWH2lkskEiTcbUTi"
-                            data-form-field="Email">
-                        <div class="row row-sm-offset">
-                            <div class="col-md-4 multi-horizontal" data-for="name">
-                                <div class="form-group">
-                                    <label class="form-control-label mbr-fonts-style display-7" for="name-form1-1j">Nome</label>
-                                    <input type="text" class="form-control" name="nome" data-form-field="Name" required="" id="name-form1-1j">
-                                </div>
-                            </div>
-                            <div class="col-md-4 multi-horizontal" data-for="email">
-                                <div class="form-group">
-                                    <label class="form-control-label mbr-fonts-style display-7" for="email-form1-1j">Email</label>
-                                    <input type="email" class="form-control" name="email" data-form-field="Email" required="" id="email-form1-1j">
-                                </div>
-                            </div>
-                            <div class="col-md-4 multi-horizontal" data-for="phone">
-                                <div class="form-group">
-                                    <label class="form-control-label mbr-fonts-style display-7" for="phone-form1-1j">Telefone/Celular</label>
-                                    <input type="tel" class="form-control" name="telefone" data-form-field="Phone" id="phone-form1-1j">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group" data-for="message">
-                            <label class="form-control-label mbr-fonts-style display-7" for="message-form1-1j">Mensagem</label>
-                            <textarea type="text" class="form-control" name="mensagem" rows="7" data-form-field="Message" id="message-form1-1j"></textarea>
-                        </div>
-
-                        <span class="input-group-btn">
-                            <button type="submit" class="btn btn-form btn-black-outline display-4">Clique aqui para enviar</button>
-                        </span>
-                    </form>
+        <div class="container jf-form">
+            <form data-licenseKey="" name="jqueryform-5129c1" id="jqueryform-5129c1" action='admin.php' method='post' enctype='multipart/form-data'
+              novalidate autocomplete="on">
+              <input type="hidden" name="method" value="validateForm">
+              <input type="hidden" id="serverValidationFields" name="serverValidationFields" value="">
+              <div class="form-group f1 required" data-fid="f1">
+                <label class="control-label" for="f1">Seu nome</label>
+                <div class="input-group">
+                  <span class="input-group-addon left">
+                    <i class="glyphicon glyphicon-user"></i>
+                  </span>
+                  <input type="text" class="form-control" id="f1" name="f1" value="" data-rule-required="true" data-msg-required="Campo obrigatório."
+                  />
                 </div>
-            </div>
-        </div>
+              </div>
+              <div class="form-group f4 " data-fid="f4">
+                <label class="control-label" for="f4">Telefone</label>
+        
+                <div class="input-group">
+                  <span class="input-group-addon left">
+                    <i class="glyphicon glyphicon-earphone"></i>
+                  </span>
+                  <input type="tel" class="form-control" id="f4" name="f4" value="" data-rule-pattern="[0-9 -+.]+" data-msg-pattern="Telefone inválido"
+                  />
+                </div>
+              </div>
+              <div class="form-group f2 required" data-fid="f2">
+                <label class="control-label" for="f2">Email</label>
+                <div class="input-group">
+                  <span class="input-group-addon left">
+                    <i class="glyphicon glyphicon-envelope"></i>
+                  </span>
+                  <input type="email" class="form-control" id="f2" name="f2" value="" data-rule-email="true" data-rule-required="true" data-msg-required="Campo obrigatório."
+                  />
+                </div>
+              </div>
+              <div class="form-group f3 required" data-fid="f3">
+                <label class="control-label" for="f3">Mensagem</label>
+        
+                <div class="input-group">
+                  <span class="input-group-addon left">
+                    <i class="glyphicon glyphicon-edit"></i>
+                  </span>
+                  <textarea class="form-control" id="f3" name="f3" rows="3" data-rule-required="true" data-msg-required="Campo obrigatório."></textarea>
+                </div>
+              </div>
+              <div class="form-group submit f0 " data-fid="f0" style="position: relative;">
+                <label class="control-label sr-only" for="f0" style="display: block;">Submit Button</label>
+        
+                <div class="progress" style="display: none; z-index: -1; position: absolute;">
+                  <div class="progress-bar progress-bar-striped active" role="progressbar" style="width:100%">
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-lg" style="z-index: 1;">
+                  Enviar mensagem
+                </button>
+              </div>
+              <div class="clearfix"></div>
+              <div class="submit">
+                <p class="error bg-warning" style="display:none;">
+                  Por favor, preencha os campos corretamente. </p>
+              </div>
+              <div class="clearfix"></div>
+            </form>
+            
+          </div>
+          <div class="container jf-thankyou" style="display:none;" data-redirect="" data-seconds="">
+            <h3>A mensagem foi enviada, obrigado.</h3>
+          </div>
     </section>
 
     <!-- LOCALIZAÇÃO E RODAPÉ -->
@@ -414,7 +447,25 @@
     <script src="assets/dropdown/js/script.min.js"></script>
     <script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>
     <script src="assets/theme/js/script.js"></script>
-    <script src="assets/formoid/formoid.min.js"></script>
+
+    <!-- SCRIPTS FORM CONTATO -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.0/js/bootstrap-datepicker.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.0/locales/bootstrap-datepicker.pt.min.js"></script>
+    <script type="text/javascript">
+        $.fn.datepicker.defaults.language = 'pt';
+    </script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/additional-methods.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.0/jquery.scrollTo.min.js"></script>
+    <script src="vendor.js"></script>
+    <script src="jqueryform.com.min.js?ver=v2.1.3&id=jqueryform-5129c1"></script>
+    <script type="text/javascript">
+    // start jqueryform initialization
+    // --------------------------------
+    JF.init('#jqueryform-5129c1');
+    </script>
 </body>
 
 </html>
